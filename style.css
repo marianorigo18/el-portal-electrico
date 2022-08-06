@@ -7,6 +7,7 @@
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 a{
     text-decoration: none;
@@ -14,6 +15,9 @@ a{
 }
 li{
     list-style-type: none;
+}
+summary{
+    cursor: pointer;
 }
 body{
     /*font-family: 'Roboto', sans-serif;*/
@@ -24,12 +28,13 @@ header{
     position: fixed;
     width: 100%;
     height: 8rem;
-    background-color: tomato;
     top: 0;
     left: 0;
+    background-color: #fff;
+    border-bottom: 2px solid #c3c3c3;
+
 }
-.nav{
-    background-color: aqua;
+.nav{       
     display: flex;
     justify-content: space-between;
     max-width: 100rem;
@@ -39,12 +44,11 @@ header{
     align-items: center;
 }
 .nav__logo{
-    background-color: blue;
+    /* background-color: blue; */
 }
 .nav__h2{
     font-weight: 600;
-    text-transform: uppercase;
-    color: #fff;
+    text-transform: uppercase;  
 }
 .nav__navbar{
     background-color: burlywood;
@@ -57,14 +61,21 @@ header{
     margin-top:8rem ;
     display: grid;
     grid-template-columns: 1fr 3.5fr;
-    background-color: blueviolet;
 }
 .nav__main{
-    background-color: rgba(250,250,250,0.2);
+    min-width: 21rem;
+    margin-left: 2rem;
+}
+.nav__main ol{
+    margin-left: 2rem;
+}
+.nav__main li{
+    margin: 1rem 0;
 }
 .main__content{
-    background-color: rgba(0,0,0,0.2);
     margin: 0 auto;
+    padding: 2rem;
+    border-left: 1px solid #c3c3c3;
 }
 .cards{
     display: flex;
@@ -73,17 +84,25 @@ header{
 .card{
     max-width: 20rem;
     width: 100%;
-    background-color: aqua;
     margin: 1rem;
+    border: 1px solid #dadce0;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 1px 1px 7px #c0c0c0;
+}
+.card:hover{
+    box-shadow: 1px 1px 16px #c0c0c0;
 }
 .card__figure{
     height: 100px;
-    background-color: brown;
     text-align: center;
+    margin: 2rem 0 ;
+    overflow: hidden;
 }
 .card__img{
     height: 100%;
 }
 .card__information{
     padding: 1rem;
+    border-top: 1px solid #dadce0;
 }
