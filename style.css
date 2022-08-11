@@ -34,6 +34,7 @@ header{
     background-color: #fff;
     border-bottom: 2px solid #c3c3c3;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    z-index: 500;
 }
 .nav{       
     display: flex;
@@ -94,6 +95,7 @@ header{
     background: #8AF18F;
     padding: 3px 5px;
     border-radius: 5px;
+    color: #000;
 }
 .main__content{
     margin: 0 auto;
@@ -135,10 +137,18 @@ header{
 }
 
 .card__figure{
-    height: 100px;
+    display: flex;
+    justify-content: center;
+    height: 10rem;
     text-align: center;
     margin: 2rem 0 ;
-    overflow: hidden;
+}
+.card__figure img{
+    transition: 0.3s;
+    z-index: 100;
+}
+.card__figure:hover > img{
+    height: 15rem;
 }
 .card__img{
     height: 100%;
