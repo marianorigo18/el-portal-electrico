@@ -33,7 +33,7 @@ header{
     left: 0;
     background-color: #fff;
     border-bottom: 2px solid #c3c3c3;
-    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    box-shadow: 1px 1px 16px #c0c0c0;
     z-index: 500;
 }
 .nav{       
@@ -62,9 +62,10 @@ header{
     margin-right: 2rem;
 }
 .main{
-    margin-top:10rem ;
+    padding-top:10rem ;
     display: grid;
     grid-template-columns: .5fr 3.5fr;
+    background-color: #ECF0F1;
 }
 .cont__nav{
     position: sticky;
@@ -74,28 +75,32 @@ header{
     min-width: 17rem;
     margin-left: 2rem;
     border-right: 1px solid #c3c3c3;
+    padding-right: 3rem;
 }
 .nav__main ul{
     margin-left: 3rem;
 }
 .nav__main h2{
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 2.8rem;
 }
 .nav__main a{
     margin: 1rem 0;
-    color: #606060;
-    font-size: 1.4rem;
+    color: #000;
+    font-size: 1.6rem;
     transition: all .2s ease;
 }
 .nav__main li{
     margin: 1px 0px;
 }
+.nav__main i{
+    vertical-align: middle;
+}
 .nav__main a:hover{
-    background: #8AF18F;
+    background: #1E8449;
     padding: 3px 5px;
     border-radius: 5px;
-    color: #000;
+    color: #fff;
 }
 .main__content{
     margin: 0 auto;
@@ -124,22 +129,25 @@ header{
     flex-wrap: wrap;
 }
 .card{
-    max-width: 20rem;
+    background-color: #fff;
+    max-width: 21rem;
     width: 100%;
     margin: 1rem;
     border: 1px solid #dadce0;
     cursor: pointer;
     transition: 0.3s;
     box-shadow: 1px 1px 7px #c0c0c0;
+    overflow: hidden;
 }
 .card:hover{
     box-shadow: 1px 1px 16px #c0c0c0;
+    overflow: unset;
 }
 
 .card__figure{
     display: flex;
     justify-content: center;
-    height: 10rem;
+    height: 13rem;
     text-align: center;
     margin: 2rem 0 ;
 }
@@ -160,7 +168,11 @@ header{
 .card__information small{
     margin: 10px;
     color: #606060;
+    font-size: 1.5rem;
+}
+.card__information h3{
+    font-size: 20px;
 }
 .card__information p{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
