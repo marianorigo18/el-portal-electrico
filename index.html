@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script defer src="main.js"></script>
     <title>EL PORTAL ELECTRICO</title>
 </head>
 <body>
@@ -17,31 +18,119 @@
             <ul class="nav__navbar">
                 <li class="nav__item"><a href="#" class="nav__link">ATENCION</a></li>
                 <li class="nav__item"><a href="#" class="nav__link">ENVIOS</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
     <main class="main">
-        <div>
-            <div class="cont__nav">
-                <nav class="nav__main">
-                    <h2>CATEGORIAS</h2>
-                    <ul>
-                        <li> <a href="#lamparas">Lamparas<i class='bx bx-chevron-right'></i></a></li>
-                        <li> <a href="#paneles">Paneles Led<i class='bx bx-chevron-right'></i></a></li>
-                        <li> <a href="#linternas">Linternas<i class='bx bx-chevron-right'></i></a></li>
-                        <li> <a href="#solar">Solar<i class='bx bx-chevron-right'></i></a></li>
-                        <li> <a href="#proyectores">Proyectores<i class='bx bx-chevron-right'></i></a></li>
-                        <li> <a href="#terminales">Terminales<i class='bx bx-chevron-right'></i></a></li>
-                        <li> <a href="#morcetos">Morcetos<i class='bx bx-chevron-right'></i></a></li>
-                        <li> <a href="#Fusibles">Fusibles<i class='bx bx-chevron-right'></i></a></li>
-                        <li> <a href="#normalizados">Normalizados<i class='bx bx-chevron-right'></i></a></li>
+        <nav class="navegation">
+            <ul class="list">
+                <!--inicio-->
+                <li class="list__item-two">
+                    <div class="list__bottom">
+                        <img src="/assets/dashboart.svg" alt="icono dashboart" class="list__img">
+                        <a href="index.html" class="nav__link-two">Inicio</a>
+                    </div>
+                </li>
+                <!--iluminacion-->
+                <li class="list__item-two list__item--click">
 
-                     </ul>
-                </nav>
-            </div>
-        </div>
+                    <div class="list__bottom list__bottom--click">
+                        <img src="/assets/folder.svg" alt="icono folder" class="list__img">
+                        <a href="#lamparas" class="nav__link-two">Lamparas</a>
+                        <img src="assets/arrow.svg" alt="icono arrow" class="list__arrow">
+                    </div>
 
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#vintage" class="nav__link-two nav__link--inside">Vintage</a>
+                        </li>
+                        
+                        <li class="list__inside">
+                            <a href="#bulbos" class="nav__link-two nav__link--inside">Bulbos</a>
+                        </li>
+                        
+                        <li class="list__inside">
+                            <a href="#hight-power" class="nav__link-two nav__link--inside">Hight Power</a>
+                        </li>
+                    </ul>
 
+                </li>                
+                <!--paneles-->
+                <li class="list__item-two list__item--click">
+
+                    <div class="list__bottom list__bottom--click">
+                        <img src="/assets/folder.svg" alt="icono folder" class="list__img">
+                        <a href="#paneles" class="nav__link-two">Paneles</a>
+                        <img src="assets/arrow.svg" alt="icono arrow" class="list__arrow">
+                    </div>
+
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#" class="nav__link-two nav__link--inside">Estoy Dentro</a>
+                        </li>
+                        
+                        <li class="list__inside">
+                            <a href="#" class="nav__link-two nav__link--inside">Estoy Dentro</a>
+                        </li>
+                        
+                        <li class="list__inside">
+                            <a href="#" class="nav__link-two nav__link--inside">Estoy Dentro</a>
+                        </li>
+                    </ul>
+
+                </li>
+                <!--linternas-->
+                <li class="list__item-two list__item--click">
+
+                    <div class="list__bottom list__bottom--click">
+                        <img src="/assets/folder.svg" alt="icono folder" class="list__img">
+                        <a href="#linternas" class="nav__link-two">Linternas</a>
+                        <img src="assets/arrow.svg" alt="icono arrow" class="list__arrow">
+                    </div>
+
+                </li>               
+                <!--iluminacion solar-->
+                <li class="list__item-two list__item--click">
+
+                    <div class="list__bottom list__bottom--click">
+                        <img src="/assets/folder.svg" alt="icono folder" class="list__img">
+                        <a href="#solar" class="nav__link-two">Iluminacion Solar</a>
+                        <img src="assets/arrow.svg" alt="icono arrow" class="list__arrow">
+                    </div>
+
+                </li>   
+                <!--proyectores-->
+                <li class="list__item-two list__item--click">
+
+                    <div class="list__bottom list__bottom--click">
+                        <img src="/assets/folder.svg" alt="icono folder" class="list__img">
+                        <a href="#proyectores" class="nav__link-two">Proyectores</a>
+                        <img src="assets/arrow.svg" alt="icono arrow" class="list__arrow">
+                    </div>
+
+                </li>  
+                <!--Materiales Normalizados-->
+                <li class="list__item-two list__item--click">
+
+                    <div class="list__bottom list__bottom--click">
+                        <img src="/assets/folder.svg" alt="icono folder" class="list__img">
+                        <a href="#normalizados" class="nav__link-two">Normalizados</a>
+                        <img src="assets/arrow.svg" alt="icono arrow" class="list__arrow">
+                    </div>
+
+                </li>   
+                <!--contacto-->
+                <li class="list__item-two">
+                    <div class="list__bottom">
+                        <img src="/assets/message.svg" alt="icono dashboart" class="list__img">
+                        <a href="index.html" class="nav__link-two">Contacto</a>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+        <!--main content-->
         <div class="main__content">
             <article class="articule__products">
                 <!--section lamparas-->
@@ -49,24 +138,35 @@
                     <h2 id="lamparas">Lamparas</h2>
 
                     <div>
-                        <h3>Vintage</h3>
+                        <h3 id="vintage" >Vintage</h3>
                         <div class="cards">
 
                             <div class="card">
                                 <figure class="card__figure">
-                                    <img src="./IMGs/lampara-golden-mac.png" alt="imagen del producto" class="card__img">
+                                    <img src="./images/products/lamparas/vintage-filament/bulbo-a60-2w.png" alt="imagen del producto" class="card__img">
                                 </figure>
                                 <div class="card__information">
                                     <small>Macroled</small>
                                     <h3>
-                                        Gota s14 1w
+                                        Bulbo A60 2W
                                     </h3>
                                     <p></p>
                                 </div>
                             </div>    
                             <div class="card">
                                 <figure class="card__figure">
-                                    <img src="IMGs/lampara-golden-mac2.png" alt="imagen del producto" class="card__img">
+                                    <img src="./images/products/lamparas/vintage-filament/globo-g125-5w.png" alt="imagen del producto" class="card__img">
+                                </figure>
+                                <div class="card__information">
+                                    <small>Macroled</small>
+                                    <h3>
+                                        Globo G125 5W
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <figure class="card__figure">
+                                    <img src="./images/products/lamparas/vintage-filament/gota-g45-3w.png" alt="imagen del producto" class="card__img">
                                 </figure>
                                 <div class="card__information">
                                     <small>Macroled</small>
@@ -74,97 +174,217 @@
                                         Gota G45 3w
                                     </h3>
                                 </div>
-                            </div>
+                            </div>    
                             <div class="card">
                                 <figure class="card__figure">
-                                    <img src="./IMGs/lampara-golden-mac3.png" alt="imagen del producto" class="card__img">
+                                    <img src="./images/products/lamparas/vintage-filament/gota-s14-1w.png" alt="imagen del producto" class="card__img">
                                 </figure>
                                 <div class="card__information">
                                     <small>Macroled</small>
                                     <h3>
-                                        Bulbo A60 2W
+                                        Gota S14 1W
                                     </h3>
                                 </div>
-                            </div>    
+                            </div>  
+                            <div class="card">
+                                <figure class="card__figure">
+                                    <img src="./images/products/lamparas/vintage-filament/tubo-t30-2w.png" alt="imagen del producto" class="card__img">
+                                </figure>
+                                <div class="card__information">
+                                    <small>Macroled</small>
+                                    <h3>
+                                        Tubo T30 2W
+                                    </h3>
+                                </div>
+                            </div>  
+                            <div class="card">
+                                <figure class="card__figure">
+                                    <img src="./images/products/lamparas/vintage-filament/tubo-t30-5w.png" alt="imagen del producto" class="card__img">
+                                </figure>
+                                <div class="card__information">
+                                    <small>Macroled</small>
+                                    <h3>
+                                        Tubo T30 5W
+                                    </h3>
+                                </div>
+                            </div>  
+                            <div class="card">
+                                <figure class="card__figure">
+                                    <img src="./images/products/lamparas/vintage-filament/tubo-t45-4w.png" alt="imagen del producto" class="card__img">
+                                </figure>
+                                <div class="card__information">
+                                    <small>Macroled</small>
+                                    <h3>
+                                        Tubo T45 4W
+                                    </h3>
+                                </div>
+                            </div> 
+                            <div class="card">
+                                <figure class="card__figure">
+                                    <img src="./images/products/lamparas/vintage-filament/vela-c37-3w.png" alt="imagen del producto" class="card__img">
+                                </figure>
+                                <div class="card__information">
+                                    <small>Macroled</small>
+                                    <h3>
+                                        Vela C37 3W
+                                    </h3>
+                                </div>
+                            </div> 
+                            <div class="card">
+                                <figure class="card__figure">
+                                    <img src="./images/products/lamparas/vintage-filament/vintage-st19-2w.png" alt="imagen del producto" class="card__img">
+                                </figure>
+                                <div class="card__information">
+                                    <small>Macroled</small>
+                                    <h3>
+                                        Vintage ST19 2W
+                                    </h3>
+                                </div>
+                            </div> 
+                            <div class="card">
+                                <figure class="card__figure">
+                                    <img src="./images/products/lamparas/vintage-filament/vintage-st19-5w.png" alt="imagen del producto" class="card__img">
+                                </figure>
+                                <div class="card__information">
+                                    <small>Macroled</small>
+                                    <h3>
+                                        Vintage ST19 5W
+                                    </h3>
+                                </div>
+                            </div> 
                         </div>
                         <div>
-                            <h3>Bulbos</h3>
+                            <h3 id="bulbos">Bulbos</h3>
                             <div class="cards">
-    
                                 <div class="card">
                                     <figure class="card__figure">
-                                        <img src="./IMGs/lampara-led-bulb.jpg" alt="imagen del producto" class="card__img">
+                                        <img src="./images/products/lamparas/bulbos-led/bulbo-10w-fria.png" alt="imagen del producto" class="card__img">
                                     </figure>
                                     <div class="card__information">
-                                        <small>osram</small>
+                                        <small>Macroled</small>
                                         <h3>
-                                            Lampara LED 10w
+                                            Lampara LED 10W Frio
                                         </h3>
                                         <p></p>
                                     </div>
                                 </div>    
                                 <div class="card">
                                     <figure class="card__figure">
-                                        <img src="./IMGs/lampara-led-bulbo.jpg" alt="imagen del producto" class="card__img">
+                                        <img src="./images/products/lamparas/bulbos-led/bulbo-12w-calida.png" alt="imagen del producto" class="card__img">
                                     </figure>
                                     <div class="card__information">
-                                        <small>philips</small>
+                                        <small>Macroled</small>
                                         <h3>
-                                            Lampara LED 12w
+                                            Lampara LED 12W Calida
                                         </h3>
                                     </div>
                                 </div>
                                 <div class="card">
                                     <figure class="card__figure">
-                                        <img src="./IMGs/lampara-led-bulbo-eta.jpg" alt="imagen del producto" class="card__img">
+                                        <img src="./images/products/lamparas/bulbos-led/bulbo-15w-fria.png" alt="imagen del producto" class="card__img">
                                     </figure>
                                     <div class="card__information">
-                                        <small>baw</small>
+                                        <small>Macroled</small>
                                         <h3>
-                                            Lampara LED 15w
+                                            Lampara LED 15W Frio
                                         </h3>
                                     </div>
                                 </div>    
                             </div>
                         </div>
                         <div>
-                            <h3>High Power</h3>
+                            <h3 id="hight-power">High Power</h3>
                             <div class="cards">
     
                                 <div class="card">
                                     <figure class="card__figure">
-                                        <img src="./IMGs/lampara-led-high-power.png" alt="imagen del producto" class="card__img">
+                                        <img src="./images/products/lamparas/bulbones-hightpower/bulbon-20w.png" alt="imagen del producto" class="card__img">
                                     </figure>
                                     <div class="card__information">
                                         <small>Macroled</small>
-                                        <h3>
-                                            Bulbon 60w
+                                        <h3 class="card__diferent">
+                                            Bulbon 20W
                                         </h3>
                                         <p></p>
                                     </div>
                                 </div>    
                                 <div class="card">
                                     <figure class="card__figure">
-                                        <img src="./IMGs/lampara-led-high-power-2.png" alt="imagen del producto" class="card__img">
+                                        <img src="./images/products/lamparas/bulbones-hightpower/bulbon-30w.png" alt="imagen del producto" class="card__img">
                                     </figure>
                                     <div class="card__information">
                                         <small>Macroled</small>
-                                        <h3>
-                                            Bulbon 60w
+                                        <h3 class="card__diferent">
+                                            Bulbon 30W
                                         </h3>
                                     </div>
                                 </div>
                                 <div class="card">
                                     <figure class="card__figure">
-                                        <img src="./IMGs/lampara-led-high-power-3.png" alt="imagen del producto" class="card__img">
+                                        <img src="./images/products/lamparas/bulbones-hightpower/bulbon-40w.png" alt="imagen del producto" class="card__img">
                                     </figure>
                                     <div class="card__information">
                                         <small>Macroled</small>
-                                        <h3>
-                                            Bulbon 90w
+                                        <h3 class="card__diferent">
+                                            Bulbon 40W
                                         </h3>
                                     </div>
-                                </div>    
+                                </div> 
+                                <div class="card">
+                                    <figure class="card__figure">
+                                        <img src="./images/products/lamparas/bulbones-hightpower/bulbon-50w.png" alt="imagen del producto" class="card__img">
+                                    </figure>
+                                    <div class="card__information">
+                                        <small>Macroled</small>
+                                        <h3 class="card__diferent">
+                                            Bulbon 50W
+                                        </h3>
+                                    </div>
+                                </div>  
+                                <div class="card">
+                                    <figure class="card__figure">
+                                        <img src="./images/products/lamparas/bulbones-hightpower/bulbon-60w.png" alt="imagen del producto" class="card__img">
+                                    </figure>
+                                    <div class="card__information">
+                                        <small>Macroled</small>
+                                        <h3 class="card__diferent">
+                                            Bulbon 60W E-40
+                                        </h3>
+                                    </div>
+                                </div>   
+                                <div class="card">
+                                    <figure class="card__figure">
+                                        <img src="./images/products/lamparas/bulbones-hightpower/bulbon-90w.png" alt="imagen del producto" class="card__img">
+                                    </figure>
+                                    <div class="card__information">
+                                        <small>Macroled</small>
+                                        <h3 class="card__diferent">
+                                            Bulbon 90W E-40
+                                        </h3>
+                                    </div>
+                                </div> 
+                                <div class="card">
+                                    <figure class="card__figure">
+                                        <img src="./images/products/lamparas/bulbones-hightpower/magnolia-40w.png" alt="imagen del producto" class="card__img">
+                                    </figure>
+                                    <div class="card__information">
+                                        <small>Macroled</small>
+                                        <h3 class="card__diferent">
+                                            Magnolia 40W E-40
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <figure class="card__figure">
+                                        <img src="./images/products/lamparas/bulbones-hightpower/magnolia-80w.png" alt="imagen del producto" class="card__img">
+                                    </figure>
+                                    <div class="card__information">
+                                        <small>Macroled</small>
+                                        <h3 class="card__diferent">
+                                            Magnolia 80W E-40
+                                        </h3>
+                                    </div>
+                                </div>  
                             </div>
                         </div>
                     </div>
@@ -261,6 +481,7 @@
                 </section>
                 <!--section solar-->
                 <section class="section__category">
+
                     <h2 id="solar">Iluminacion Solar</h2>
 
                     <div>
@@ -294,6 +515,69 @@
                         </div>
                     </div>
                 </section>
+                <!--section proyectores-->
+                <section class="section__category">
+                    <h2 id="proyectores">Proyectores</h2>
+                    <div>
+                        <h3>Reflectores</h3>
+                        <div class="cards">
+                            <div class="card">
+                                <figure class="card__figure">
+                                    <img src="./images/products/proyectores/reflectores/reflector-10w.png" alt="imagen del producto" class="card__img">
+                                </figure>
+                                <div class="card__information">
+                                    <small>Macroled</small>
+                                    <h3>Reflector 10W</h3>
+                            </div>
+                            </div>
+                            <div class="card">
+                                <figure class="card__figure">
+                                    <img src="./images/products/proyectores/reflectores/reflector-20w.png" alt="imagen del producto" class="card__img">
+                                </figure>
+                                <div class="card__information">
+                                    <small>Macroled</small>
+                                    <h3>Reflector 20W</h3>
+                            </div>
+                            </div>
+                            <div class="card">
+                                <figure class="card__figure">
+                                    <img src="./images/products/proyectores/reflectores/reflector-50w.png" alt="imagen del producto" class="card__img">
+                                </figure>
+                                <div class="card__information">
+                                    <small>Macroled</small>
+                                    <h3>Reflector 50W</h3>
+                            </div>
+                            </div>
+                            <div class="card">
+                                <figure class="card__figure">
+                                    <img src="./images/products/proyectores/reflectores/reflector-100w.png" alt="imagen del producto" class="card__img">
+                                </figure>
+                                <div class="card__information">
+                                    <small>Macroled</small>
+                                    <h3>Reflector 100W</h3>
+                            </div>
+                            </div>
+                            <div class="card">
+                                <figure class="card__figure">
+                                    <img src="./images/products/proyectores/reflectores/reflector-150w.png" alt="imagen del producto" class="card__img">
+                                </figure>
+                                <div class="card__information">
+                                    <small>Macroled</small>
+                                    <h3>Reflector 150W</h3>
+                            </div>
+                            </div>
+                            <div class="card">
+                                <figure class="card__figure">
+                                    <img src="./images/products/proyectores/reflectores/reflector-200w-(2).png" alt="imagen del producto" class="card__img">
+                                </figure>
+                                <div class="card__information">
+                                    <small>Macroled</small>
+                                    <h3>Reflector 200W</h3>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <!--section normalizados-->
                 <section class="section__category">
                     <h2 id="normalizados">Materiales Normalizados</h2>
@@ -311,7 +595,7 @@
                         </div>
                         <div class="card">
                             <figure class="card__figure">
-                                <img src="./IMGs/CONECTOR-PARA-JAVALINA.png" alt="imagen del producto" class="card__img">
+                                <img src="" alt="imagen del producto" class="card__img">
                             </figure>
                             <div class="card__information">
                                 <small>undefined</small>

@@ -64,44 +64,65 @@ header{
 .main{
     padding-top:10rem ;
     display: grid;
-    grid-template-columns: .5fr 3.5fr;
+    grid-template-columns: 300px 3.5fr;
     background-color: #ECF0F1;
 }
-.cont__nav{
-    position: sticky;
-    top: 101px;
+
+.list{
+    position: fixed;
+    background-color: #fff;
+    max-width: 300px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0px 36px 16px 0px;
+
 }
-.nav__main{
-    min-width: 17rem;
-    margin-left: 2rem;
-    border-right: 1px solid #c3c3c3;
-    padding-right: 3rem;
+.list__item-two{
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
 }
-.nav__main ul{
-    margin-left: 3rem;
+.nav__link-two{
+    display: block;
+    padding: 1.5rem 0;   
 }
-.nav__main h2{
-    font-weight: 400;
-    font-size: 2.8rem;
+.list__item--click{
+    cursor: pointer;
 }
-.nav__main a{
-    margin: 1rem 0;
-    color: #000;
-    font-size: 1.6rem;
-    transition: all .2s ease;
+.list__bottom{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 70%;
+    margin: 0 auto;
 }
-.nav__main li{
-    margin: 1px 0px;
+.arrow .list__arrow{
+    transform: rotate(90deg);
 }
-.nav__main i{
-    vertical-align: middle;
+.list__arrow{
+    margin-left: auto;
+    transition: transform .3s;
 }
-.nav__main a:hover{
-    background: #1E8449;
-    padding: 3px 5px;
-    border-radius: 5px;
-    color: #fff;
+.list__show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #303440;
+    transition: height .4s;
+    height: 0;
 }
+.list__inside{
+    border-radius: 6px;
+    padding-left: 2rem;
+}
+.list__inside:hover{
+    background-color: #F6F8FA;
+}
+
+
+
 .main__content{
     margin: 0 auto;
     padding: 2rem 4rem;
@@ -124,13 +145,16 @@ header{
 .section__category h2{
     scroll-margin-top: 10rem;
 }
+.section__category h3{
+    scroll-margin-top: 7rem;
+}
 .cards{
     display: flex;
     flex-wrap: wrap;
 }
 .card{
     background-color: #fff;
-    max-width: 21rem;
+    max-width: 30rem;
     width: 100%;
     margin: 1rem;
     border: 1px solid #dadce0;
@@ -138,6 +162,7 @@ header{
     transition: 0.3s;
     box-shadow: 1px 1px 7px #c0c0c0;
     overflow: hidden;
+    border-radius: 0.6rem;
 }
 .card:hover{
     box-shadow: 1px 1px 16px #c0c0c0;
@@ -147,7 +172,7 @@ header{
 .card__figure{
     display: flex;
     justify-content: center;
-    height: 13rem;
+    height: 20rem;
     text-align: center;
     margin: 2rem 0 ;
 }
@@ -156,7 +181,7 @@ header{
     z-index: 100;
 }
 .card__figure:hover > img{
-    height: 15rem;
+    height: 22rem;
 }
 .card__img{
     height: 100%;
@@ -165,6 +190,7 @@ header{
     padding: 1rem;
     border-top: 1px solid #dadce0;
 }
+
 .card__information small{
     margin: 10px;
     color: #606060;
@@ -172,7 +198,13 @@ header{
 }
 .card__information h3{
     font-size: 20px;
+    padding: 5px 0px 5px 10px;
 }
 .card__information p{
     font-size: 1.3rem;
+}
+.card__information .card__diferent{
+    background-color: #1E8449;
+    border-radius: 5px;
+    color: #fff;
 }
