@@ -67,6 +67,11 @@ header{
     grid-template-columns: 300px 3.5fr;
     background-color: #ECF0F1;
 }
+@media (max-width: 1380px){
+    .main{
+        grid-template-columns: 230px 3.5fr;
+    }
+}
 
 .list{
     position: fixed;
@@ -74,11 +79,24 @@ header{
     max-width: 300px;
     width: 100%;
     height: 100vh;
-    display: flex;
+    /*display: flex;
     justify-content: center;
     flex-direction: column;
     border-radius: 0px 36px 16px 0px;
-
+    */
+}
+@media (max-width: 1380px){
+    .list{
+        max-width: 24rem;
+    }
+}
+#nav__scroll{
+    height: 80%;
+    overflow-y: scroll;
+    padding-bottom: 40rem;
+}
+#nav__scroll::-webkit-scrollbar{
+    width: 0;
 }
 .list__item-two{
     width: 100%;
@@ -87,7 +105,7 @@ header{
 }
 .nav__link-two{
     display: block;
-    padding: 1.5rem 0;   
+    padding: 0.7rem 0;   
 }
 .list__item--click{
     cursor: pointer;
@@ -98,6 +116,7 @@ header{
     gap: 1rem;
     width: 70%;
     margin: 0 auto;
+
 }
 .arrow .list__arrow{
     transform: rotate(90deg);
@@ -154,7 +173,7 @@ header{
 }
 .card{
     background-color: #fff;
-    max-width: 30rem;
+    max-width: 29rem;
     width: 100%;
     margin: 1rem;
     border: 1px solid #dadce0;
@@ -163,6 +182,12 @@ header{
     box-shadow: 1px 1px 7px #c0c0c0;
     overflow: hidden;
     border-radius: 0.6rem;
+}
+@media (max-width: 1380px){
+    .card{
+        max-width: 22rem;
+        margin: 0.5rem;
+    }
 }
 .card:hover{
     box-shadow: 1px 1px 16px #c0c0c0;
@@ -174,7 +199,13 @@ header{
     justify-content: center;
     height: 20rem;
     text-align: center;
-    margin: 2rem 0 ;
+    margin: 2rem 0;
+    align-items: flex-end;
+}
+@media (max-width: 1380px){
+    .card__figure{
+        height: 17rem;
+    }
 }
 .card__figure img{
     transition: 0.3s;
@@ -182,6 +213,11 @@ header{
 }
 .card__figure:hover > img{
     height: 22rem;
+}
+@media (max-width: 1380px){
+    .card__figure:hover > img{
+        height: 19rem;
+    }
 }
 .card__img{
     height: 100%;
@@ -205,6 +241,7 @@ header{
 }
 .card__information .card__diferent{
     background-color: #1E8449;
+    padding: 0 5px;
     border-radius: 5px;
     color: #fff;
 }
