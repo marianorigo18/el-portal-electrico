@@ -45,15 +45,33 @@ header{
     height: 100%;
     align-items: center;
 }
+.nav__logo{
+    margin-left: 1rem;
+}
 .nav__h2 a{
     font-weight: 600;
     text-transform: uppercase;  
     color: #606060;
     font-family: 'Rajdhani', sans-serif;
-
+}
+.icon__menu{
+    display: none;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.icon__menu img{
+    width: 3.2rem;
 }
 .nav__navbar{
     display: flex;
+}
+@media (max-width: 1030px){
+    .icon__menu{
+        display: block;
+    }
+    .nav__navbar{
+        display: none;
+    }
 }
 .nav__navbar a{
     font-size: 1.3rem;
@@ -63,14 +81,9 @@ header{
 }
 .main{
     padding-top:10rem ;
-    display: grid;
-    grid-template-columns: 300px 3.5fr;
+    /*display: grid;
+    grid-template-columns: 300px 3.5fr;*/
     background-color: #ECF0F1;
-}
-@media (max-width: 1380px){
-    .main{
-        grid-template-columns: 230px 3.5fr;
-    }
 }
 
 .list{
@@ -84,12 +97,28 @@ header{
     flex-direction: column;
     border-radius: 0px 36px 16px 0px;
     */
+    z-index: 500;
+    transition:.3s;
+    top: 60px;
+    left: 0;
+
 }
 @media (max-width: 1380px){
     .list{
         max-width: 24rem;
+
+
     }
 }
+.visible{
+    left: -240px;
+}
+@media (min-width: 1030px){
+    .visible{
+        left: 0;
+    }
+}
+
 #nav__scroll{
     height: 80%;
     overflow-y: scroll;
@@ -116,7 +145,7 @@ header{
     gap: 1rem;
     width: 70%;
     margin: 0 auto;
-
+    border-bottom: 1px solid #E6E6E6;
 }
 .arrow .list__arrow{
     transform: rotate(90deg);
@@ -144,19 +173,39 @@ header{
 
 .main__content{
     margin: 0 auto;
-    padding: 2rem 4rem;
+    padding-left: 32rem;
+}
+@media (max-width: 1380px) {
+    .main__content{
+        padding-left: 26rem;
+    }
+}
+@media (max-width: 1030px) {
+    .main__content{
+        padding-left: 4rem;
+    }
+}
+@media (max-width: 750px) {
+    .main__content{
+        padding-left: 1rem;
+    }
 }
 .main__content h2{
     color: #606060;
     margin: 10px;
     font-size: 5rem;
     font-weight: 300;
+
 }
 .main__content div h3{
     font-size: 2rem;
     font-weight: 400;
     color: #606060;
     margin: 10px;
+}
+.articule__products{
+    max-width: 124rem;
+    width: 100%;
 }
 .section__category{
     margin-bottom: 5rem;
