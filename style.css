@@ -85,6 +85,11 @@ header{
     grid-template-columns: 300px 3.5fr;*/
     background-color: #ECF0F1;
 }
+@media (max-width:1030px) {
+    .main{
+        padding-top: 3rem;
+    }
+}
 
 .list{
     position: fixed;
